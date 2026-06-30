@@ -9,3 +9,18 @@
   --color-orange: hsl(25, 97%, 53%);
   --color-container-bg: #1f2630;
 }
+.selected {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+.default-selected {
+  background-color: var(--color-light-grey);
+  color: var(--color-white);
+}
+.default-selected:hover {
+  background-color: var(--color-orange);
+  color: var(--color-white);
+}
+.hide {
+  display: none;
+}

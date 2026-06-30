@@ -8,13 +8,13 @@
   </head>
   <body class="h-screen bg-black flex justify-center items-center">
     <div
-      class="w-99.25 h-117.5 bg-container-bg rounded-[30px] px-7.5 pt-7.5 pb-15 flex flex-col justify-between"
+      class="w-99.25 h-117.5 bg-container-bg rounded-[30px] px-7.5 pt-7.5 pb-15 flex flex-col justify-between" id="questionPage"
     >
       <div>
         <img
           src="public/icon-star.svg"
           alt=""
-          class="bg-dark-blue p-[15px] rounded-full"
+          class="bg-dark-blue p-3.75 rounded-full"
         />
       </div>
       <div>
@@ -28,27 +28,32 @@
       </div>
       <div class="flex justify-between">
         <div
-          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-white"
+          class="bg-dark-blue size-12.5 flex justify-center items-center rounded-full text-light-grey default-selected cursor-pointer rating"
+          id="rate1"
         >
           1
         </div>
         <div
-          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-white"
+          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-light-grey hover:bg-orange hover:text-white cursor-pointer rating"
+          id="rate2"
         >
           2
         </div>
         <div
-          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-white"
+          class="bg-dark-blue size-12.5 flex justify-center items-center rounded-full text-light-grey hover:bg-orange hover:text-white cursor-pointer rating"
+          id="rate3"
         >
           3
         </div>
         <div
-          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-white"
+          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-light-grey hover:bg-orange hover:text-white cursor-pointer rating"
+          id="rate4"
         >
           4
         </div>
         <div
-          class="bg-dark-blue size-[50px] flex justify-center items-center rounded-full text-white"
+          class="bg-dark-blue size-12.5 flex justify-center items-center rounded-full text-light-grey hover:bg-orange hover:text-white cursor-pointer rate-number rating"
+          id="rate5"
         >
           5
         </div>
@@ -56,18 +61,28 @@
       <div>
         <button
           id="btnSubmit"
-          class="h-[46.5px] w-full bg-orange rounded-full text-white font-[400] hover:bg-white hover:text-orange"
+          class="h-[46.5px] w-full bg-orange rounded-full text-white font-[400] hover:bg-white hover:text-orange cursor-pointer"
         >
           SUBMIT
         </button>
       </div>
     </div>
     <div
-      class="w-99.25 h-117.5 bg-container-bg rounded-[30px] px-7.5 pt-7.5 pb-15 flex flex-col justify-between"
+      class="w-99.25 h-117.5 bg-container-bg rounded-[30px] px-7.5 pt-7.5 pb-15 flex flex-col justify-between text-center items-center hide"
+      id="resultPage"
     >
-    
-  </div>
-
+      <div><img src="public/illustration-thank-you.svg" alt="" /></div>
+      <div class="text-orange px-[15px] py-[6px] bg-dark-blue rounded-full">
+        <p>You selected <span id="resultRate"></span> out of 5</p>
+      </div>
+      <div><h2 class="text-white text-[27px] font-[400]">Thank you!</h2></div>
+      <div>
+        <p class="text-light-grey">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
+    </div>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
